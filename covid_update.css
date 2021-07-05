@@ -1,0 +1,445 @@
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+header{
+    background-color: cornflowerblue;
+    /* height: 264px; */
+}
+.header1{
+    color: #2739a0;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 84px; */
+    padding: 20px 10px;
+    text-align: right;
+}
+#header-img{
+    display: inline block;
+}
+#header1-1{
+    display:inline-block;
+    position: relative;
+    padding-left: 77px;
+    padding-top: 21px;
+    /* top: -16px;
+    right: 152px; */
+}
+#header1-2{
+        /* position: relative; */
+        font-size: 15px;
+        /* right: 281px; */
+        display: inline-block;
+        font-size: 18px;
+        padding-top: 55px;
+        padding-left: 11px;
+}
+#span, #span2{
+    color:rgb(37, 145, 69);
+    cursor: pointer;
+}
+/* span{
+    color: rgb(37, 145, 69);
+    cursor: pointer;
+} */
+.header1 img{
+    display: inline-block;
+    clear: both;
+    position: absolute;
+    /* left: 730px; */
+}
+#span{
+    display: inline-block;
+}
+.header2{
+    display: flex;
+    flex-wrap: wrap;
+    color: chartreuse;
+    background-color: rgb(238, 31, 31);
+    /* height: 100px; */
+    box-sizing: border-box;
+}
+.header2 ul{
+    display: inline-block;
+    list-style: none;
+    clear: both;
+}
+.header2 li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    border: 1.5px solid rgb(231, 228, 228);
+    border-radius: 5px;
+    margin: 5px;
+    margin-right: 37px;
+}
+.header2 ul li a{
+    color: cornsilk;
+    text-decoration: none;
+}
+.header2 ul li a:hover, .navbar ul li a:active{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.account{
+    display: inline-block;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+#button1, #button2{
+    background-color: greenyellow;
+    border-radius: 15px;
+    margin: 5px;
+}
+#button1
+{
+    margin-left: 290px;
+}
+#button1:hover, #button2:hover{
+    background-color: rgb(146, 219, 35);
+}
+#button1 a, #button2 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+#button1 a:hover, #button2 a:hover{
+    color: black;
+    font-weight: bold;   
+}
+
+/* main css is started from here */
+
+main
+{
+    height: 1100px;
+}
+.heading1
+{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(231, 180, 85);
+}
+
+.heading1 ul li
+{
+    list-style: none;
+    float: left;
+    font-size: 20px;
+    margin: 13px 20px 0px 20px;
+    color: rgb(86, 86, 212);
+}
+
+.heading2
+{
+    background-color: rgb(0, 38, 255);
+    height: 30px;
+}
+
+.heading2 marquee
+{
+    padding-top: 4px;
+    font-size: 15px;
+    color: white;
+}
+
+.block1
+{
+    background-color:rgb(165, 201, 253) ;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 17%;
+    float: left;
+    margin-left:200px;
+}
+
+.block1 pre{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 0px;
+    padding-left: 33px;
+} 
+
+
+
+.block2
+{
+    background-color:rgb(186, 241, 139);
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 17%;
+    float: left;
+    margin-left:90px;
+}
+
+.block2 pre{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 0px;
+    padding-left: 13px;
+}  
+
+.block3
+{
+    display: inline-block;
+    background-color:rgb(255, 155, 155) ;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 17%;
+    margin-left:90px;
+}
+
+.block3 pre{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 0px;
+    padding-left: 35px;
+}  
+
+.heading3
+{
+    background-color:rgb(58, 135, 165);
+    height: 70px;
+    width: 80%;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.heading3 p
+{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+}
+
+.heading4
+{
+    background-color: red;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 13px;
+}
+
+.heading4 marquee{
+    color: white;
+    font-size: 25px;
+    padding-left: 200px;
+}
+
+.update_info
+{
+    height: 500px;
+    background-color: rgb(226, 234, 243);
+    margin-top: 13px;
+}
+
+.heading5
+{
+    font-size: 30px;
+    font-family: "robotobold";
+    padding-left: 140px;
+    padding-top: 3px;
+}
+
+.box1
+{
+    display: inline-block;
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 200px;
+    float: left;
+}
+
+.box2
+{
+    display: inline-block;
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 90px;
+    float: left;
+}
+
+.box3
+{
+    display: inline-block;
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 90px;
+    
+}
+
+.box4
+{
+    margin-top: 30px;
+    display: inline-block;
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 200px;
+    float: left;
+}
+
+.box5
+{
+    margin-top: 30px;
+    display: inline-block;
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 90px;
+    float: left;
+}
+
+.box6
+{
+    margin-top: 30px;
+    display: inline-block;
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 90px;
+}
+
+.date
+{
+    color: blue;
+    font-size: 15px;
+}
+
+ .box1:hover,.box2:hover,.box:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover
+ {
+     background-color: rgb(80, 114, 226);
+     color: white;
+     cursor: pointer;
+     text-decoration: underline;
+ }
+
+ .box1:hover pre, .box2:hover pre, .box3:hover pre, .box4:hover pre, .box5:hover pre, .box6:hover pre
+ {
+    color: rgb(223, 223, 20);
+
+ }
+.self_help
+{
+    background-color: rgb(162, 235, 162);
+    height:200px ;
+}
+
+.button3
+{
+    background-color: yellowgreen;
+    height: 40px;
+    border-radius: 6px;
+    margin: 60px 180px;
+}
+
+.button3,.button4 a
+{
+    font-size: 20px;
+    font-weight: bold;  
+    padding-top: 8px;
+
+}
+
+.button4
+{
+    height: 40px;
+    border-radius: 6px;
+    margin: 60px 180px;
+    background-color: tomato;
+}
+ /* footer css */
+
+footer{
+    background-color: rgb(71, 63, 63);
+    color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: center;
+}
+.footer-left {
+    /* display: inline-block; */
+    padding: 5px 10px;
+}
+#name {
+    font-size: 60px;
+}
+#quotes{
+    font-family: 'Viaoda Libre', cursive;   
+    font-size: xx-large; 
+}
+.footer-middle{
+    width: 600px;
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+.footer-middle a{
+    text-decoration: none;
+    font-weight: bold;
+    color: beige;
+}
+.footer-right{
+padding: 5px 10px;
+}
+#contact{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.fa {
+    padding: 5px;
+    font-size: 35px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+    opacity: 0.8;
+}
+.fa-facebook {
+    background: #8ba9eb;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #77bcf1;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-youtube {
+    background: #dd4848;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #e63cc1;
+    color: white;
+  }

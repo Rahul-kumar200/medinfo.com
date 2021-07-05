@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arogya setu</title>
+    <style>
+        body {
+            background-image: url(https://www.greenbiz.com/sites/default/files/images/articles/featured/coronavirus.jpg);
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+
+        }
+
+        fieldset {
+            display: inline-block;
+            width: 700px;
+            background-color: rgb(220 247 179);
+            background-image: url(https://images.unsplash.com/photo-1618015359994-a67bd07e48b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=800);
+            background-repeat: no-repeat;
+
+        }
+
+        .note {
+            color: red;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        label {
+            color: #0a1d05;
+        }
+
+        input {
+            color: rgb(187, 192, 192);
+            text-align: center;
+            padding: 5px 80px;
+            border: 2px solid green;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        #submit input {
+            color: wheat;
+            font-size: 15px;
+            font-weight: bolder;
+            background: rgb(255, 1, 1);
+        }
+    </style>
+    <script>
+        function validate() {
+            if (document.myform.name.value == "" || document.myform.age.value == "" || document.myform.vaccine.value == "" || document.myform.vaccination.value == "" || document.myform.Covid.value == "") {
+                alert("No blank value allowed!!!")
+            }
+        }
+
+        function riskfinder() {
+            if ((document.myform.vaccination.value == "No") && (document.myform.Covid.value == "Yes") && (document.myform.travel.value == "Yes") && (document.myform.preconditions.value != "None")) {
+                alert("You have high chances of getting Covid as the symptoms suggest...  Kindly have regular checkup and Stay home,Stay safe. Maintain social distancing and wear mask... And search regularly for Vaccine slot and get vaccinated soon to avoid the spread")
+            }
+            else if ((document.myform.vaccination.value == "No") && (document.myform.Covid.value == "No") && ((document.myform.travel.value == "Yes") || (document.myform.travel.value == "No")) && (document.myform.preconditions.value == "None")) {
+                alert("You have moderate chances of getting Covid... Kindly have test for Covid and follow all the precautions and Stay Home, Stay Safe. Always wear mask and maintain social distancing. Regularly check for Vaccine slot and if available, get vaccinated.")
+            }
+            else if ((document.myform.vaccination.value == "No") && (document.myform.Covid.value == "No") && ((document.myform.travel.value == "Yes") || (document.myform.travel.value == "No")) && (document.myform.preconditions.value != "None")) {
+                alert("You have moderate chances of getting Covid as you have such related chronic disease and you are prone to its symptoms... Kindly have test for Covid and follow all the precautions and Stay Home, Stay Safe. Always wear mask and maintain social distancing. Regularly check for Vaccine slot and if available, get vaccinated.")
+            }
+            else if ((document.myform.vaccination.value == "Yes") && ((document.myform.Covid.value == "Yes") || (document.myform.Covid.value == "No")) && ((document.myform.travel.value == "Yes") || (document.myform.travel.value == "No"))) {
+                alert("You have a low risk of getting Covid as you are vaccinated... But you also must follow the guidelines as the Covid has not ended yet. Go out only when urgent and always wear mask and maintain social distancing...")
+            }
+            else {
+                alert("Some error,Kindly fill all the entries")
+            }
+        }
+        function guide() {
+            validate();
+            riskfinder();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="body">
+        <fieldset>
+            <div class="note">Please note that your inputs will supplement the efforts being taken to contain the Corona
+                pandemic and access the Vaccination status and symptoms. Please help us in helping India...</div><br>
+            <form name="myform" autocomplete="off" onsubmit="guide()">
+                <input type="text" name="name" placeholder="Enter your full name">
+                <br><br>
+                <label>Pls confirm your age: <br>
+                    <input type="number" name="age" min="0"></label><br><br>
+                <label>1.) Have you taken the vaccination:
+                    <input type="radio" name="vaccination" value="Yes">Yes
+                    <input type="radio" name="vaccination" value="No">No
+                </label><br><br>
+                <label>2.) Which vaccine you were given: <br>
+                    <input type="radio" name="vaccine" value="Covaxin">Covaxin
+                    <input type="radio" name="vaccine" value="Covishield">Covishield
+                    <input type="radio" name="vaccine" value="dontknow">Don't know the name
+                    <input type="radio" name="vaccine" value="Notvaccinated">Not Vaccinated Yet
+                </label><br><br>
+                <label>3.) Number of doses taken by you:
+                    <input type="radio" name="Doses" value="FirstDose">First Dose
+                    <input type="radio" name="Doses" value="BothDoses">Both Doses
+                    <input type="radio" name="Doses" value="notany">Not Vaccinated
+                </label><br><br>
+                <label>4.) Did you have Covid in past 3 months or after taking the shot?:
+                    <input type="radio" name="Covid" value="Yes">Yes
+                    <input type="radio" name="Covid" value="No">No
+                </label><br><br>
+                <label>5.) Are you currently experiencing any of the following symptoms? <br>
+                    <input type="checkbox" name="symptoms" value="Cough">Cough
+                    <input type="checkbox" name="symptoms" value="Fever">Fever
+                    <input type="checkbox" name="symptoms" value="SoreThr">Sore Throat
+                    <input type="checkbox" name="symptoms" value="ChestCong">Chest Congestion
+                    <input type="checkbox" name="symptoms" value="BodyAche">Body Ache
+                    <input type="checkbox" name="symptoms" value="DiffBreathing">Difficult in breathing
+                    <input type="checkbox" name="symptoms" value="smellntaste">Loss of senses of smell and taste
+                    <input type="checkbox" name="symptoms" value="OtherSym">Other symptoms
+                    <input type="checkbox" name="symptoms" value="None">None
+                </label><br><br>
+                <label>6.) Do you have any of the following pre-existing condition: <br>
+                    <input type="radio" name="preconditions" value="Asthma">Asthma
+                    <input type="radio" name="preconditions" value="Hypertension">Hypertension
+                    <input type="radio" name="preconditions" value="LungDisease">LungDisease
+                    <input type="radio" name="preconditions" value="Heartdisease">Heart Disease
+                    <input type="radio" name="preconditions" value="Diabetes">Diabetes
+                    <input type="radio" name="preconditions" value="KidneyDisorder">Kidney Disorder
+                    <input type="radio" name="preconditions" value="None">None
+                </label><br><br>
+                <label>7.) Have you travelled in the past 14 days to any other place:
+                    <input type="radio" name="travel" value="Yes">Yes
+                    <input type="radio" name="travel" value="No">No
+                </label><br><br>
+                </label>
+                <div id="submit"><input type="submit" value="Submit"></div>
+            </form>
+
+        </fieldset>
+    </div>
+</body>
+
+</html>

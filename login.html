@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LogIn Form</title>
+    <script src="project.js"></script>
+    <style>
+        body {
+            text-align: center;
+            background-color: #4ac35e99;
+        }
+        
+        header {
+            background-color: cornflowerblue;
+            /* height: 264px; */
+        }
+        
+        .header1 {
+            color: #2739a0;
+            font-family: "Baloo Bhai 2", cursive;
+            font-size: 50px;
+            font-weight: bolder;
+            background-color: azure;
+            /* height: 84px; */
+            display: flex;
+            flex-wrap: wrap;
+            /* padding: 20px 10px; */
+            /* text-align: right; */
+        }
+        /* .header1_logo {
+    float: left;
+} */
+        
+        #header1-1 {
+            display: inline-block;
+            /* position: relative; */
+            /* top: -16px; */
+            /* right: 152px; */
+            /* float: right; */
+            padding: 10px 15px;
+        }
+        
+        #header1-2 {
+            /* position: relative; */
+            font-size: 15px;
+            /* right: 281px; */
+            display: inline-block;
+            font-size: 18px;
+            /* float: right; */
+            padding-top: 40px;
+            padding-left: 11px;
+        }
+        
+        #span,
+        #span2 {
+            color: rgb(37, 145, 69);
+            cursor: pointer;
+        }
+        /* span{
+    color: rgb(37, 145, 69);
+    cursor: pointer;
+} */
+        
+        .header1 img {
+            display: inline-block;
+            clear: both;
+            /* position: absolute; */
+            /* left: 730px; */
+        }
+        
+        #span {
+            display: inline-block;
+        }
+        
+        .option {
+            margin-top: 45px;
+        }
+        
+        .google_btn {
+            margin-top: 45px;
+            margin-left: 43%;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            font-size: larger;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        .btn :hover {
+            opacity: 1;
+            background-color: yellowgreen;
+        }
+        
+        .btn :active {
+            color: red;
+        }
+        
+        .btn {
+            font-size: 40px;
+            opacity: 0.8;
+            background-color: rgb(187, 69, 26);
+            color: white;
+        }
+        
+        .class {
+            opacity: 0.5;
+            color: grey;
+        }
+        
+        .login {
+            font-size: x-large;
+            background-color: rgb(187, 69, 26);
+            opacity: 0.8;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <img class="header1_logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCxTnQ75455edvcV-0BRXqMDuozAak_bV4Q&usqp=CAU" height="90px" width="70px" />
+            <div id="header1-1">Medinfo</div>
+            <div id="header1-2">
+                <div id="span">NGO</div>
+                for Medicinal Help...
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="option">
+            <a href="login.html">
+                <button class="btn" href="login.html">Log In</button>
+            </a>
+            <a href="signin.html">
+                <button class="btn" src="signin.html">Sign Up</button>
+            </a>
+        </div>
+        <div class="google_btn">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_rwEWwkNC3erV3O-0O9H_i5VwCs9WgRshxA&usqp=CAU" width="43px" height="43px" />
+            <button class="google_signin">Sign In with Google</button>
+        </div>
+        <p class="or">or</p>
+        <fieldset width="50%">
+            <legend>User Details</legend>
+            <br /><br />
+            <form name="form" action="#" onsubmit="return validate(0)">
+                <label id="email">Email: </label>
+                <input id="email" type="email" name="email" /><br /><br />
+                <label id="Ph_no">Phone: </label>
+                <input id="Ph_no" type="number" name="number" /><br /><br />
+                <label id="password">Password: </label>
+                <input id="password" type="password" name="password1" /><br /><br />
+
+                <input class="login" type="submit" value="Log In" />
+            </form>
+            <p>Don't have an account? <a href="signin.html">Sign Up</a></p>
+        </fieldset>
+    </main>
+</body>
+
+</html>

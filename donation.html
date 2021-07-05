@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For font styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <!-- For adding social media symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Donate</title>
+    <script src="project.js"></script>
+    <style>
+        .block3 {
+            display: flex;
+            width: 95%;
+            height: 30%;
+            padding: 40px;
+        }
+        
+        .block2 {
+            width: 99%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .working {
+            background-color: rgb(187, 69, 26);
+            display: flex;
+            height: 30%;
+            padding: 40px;
+            padding-left: 50px;
+            color: azure
+        }
+        
+        .part1 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .part2 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .part3 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .part4 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .advantage {
+            background-color: azure;
+            padding-left: 10px;
+        }
+        
+        .row1 {
+            display: flex;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        
+        .row2 {
+            display: flex;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        
+        .row3 {
+            display: flex;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        
+        .col2 {
+            margin-left: 320px;
+        }
+        
+        .block1 {
+            background-color: beige;
+            flex-flow: nowrap;
+            display: flex;
+            width: 100%;
+        }
+        
+        .form {
+            margin-left: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            float: right;
+        }
+        
+        .change {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnzldjhP3QpWPtCtMoH1EugM_VCVUQP1NT7w&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            float: left;
+            width: 80%;
+        }
+        
+        .need {
+            text-align: right;
+            font-size: x-large;
+            padding-top: 50px;
+            color: #1a237e;
+            padding-right: 50px;
+        }
+        
+        .donate {
+            background-color: rgb(187, 69, 26);
+            font-size: x-large;
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <img class="header1_logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCxTnQ75455edvcV-0BRXqMDuozAak_bV4Q&usqp=CAU" height="90px" width="70px">
+            <div id="header1-1">Medinfo</div>
+            <div id="header1-2">
+                <div id="span">NGO</div> for Medicinal Help...
+            </div>
+        </div>
+
+        <div class="header2">
+            <ul class="links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gethelp">Medicine Help Required</a></li>
+                <li><a href="wanttohelp">Medicine Donation</a></li>
+            </ul>
+            <div class="account">
+                <button id="button1"><a href="login.html">Log-In</button>
+                <button id="button2"><a href="signup.html">Sign-Up</a></button>
+            </div>
+        </div>
+        <div class="header3">
+            <marquee behavior="alternate" direction="left" bgcolor="gold" height="40px">Your help can save LIFE of someone. So please donate.</marquee>
+        </div>
+    </header>
+    <main>
+        <div class="block1">
+            <div class="change">
+                <div class="need">
+                    <h1>
+                        NEED CHANGES<br/> MAKE A DONATION
+                    </h1>
+                </div>
+            </div>
+            <div class="form">
+                <fieldset>
+                    <legend>Donation Form</legend>
+                    <form name="form" action="#" onsubmit="return validate(0)">
+                        <label id="email">Email: </label><br/>
+                        <input id="email" type="email" name="email" cols="50px" /><br /><br />
+                        <label id="Ph_no">Phone: </label><br/>
+                        <input id="Ph_no" type="number" name="number" cols="30" /><br /><br />
+                        <label id="password">Password: </label><br/>
+                        <input id="password" type="password" name="password1" /><br /><br />
+
+                        <input class="donate" type="submit" value="Donate Now" />
+                    </form>
+                </fieldset>
+            </div>
+
+        </div>
+
+        <div class="block2">
+
+
+            <div class="enlarge">
+                <h1>HOW Medinfo WORKS?</h1>
+                <h3>Medinfo is one of it kind platform in India which is transforming the way people give to charities with the help of e-commerce.</h3>
+            </div>
+            <div class="content">
+
+                <p>Medinfo is a unique platform that allows organizations to create campaigns for their ongoing projects. Through Medinfo, NGOs display the products they are in immediate need of. Donors can choose the organization that they wish to support
+                    and donate the products they want to. The process of buying these products is extremely convenient and is the same as shopping online. Similar to online shopping once you make the payment, the products will be delivered to the organization
+                    you support either at the end of the campaign (or) once they reach the target. You will always be able to track your donation and Campaigns will keep updating the donors about the utilisation of products.</p>
+            </div>
+
+            <div class="working">
+
+                <div class="part1">
+                    <div class="img">
+                        <img src="https://www.donatekart.com/images/how-1-choose-a-cause.png">
+                    </div>
+                    <div class="content">
+                        <h3> CHOOSE A CAUSE
+
+                        </h3>
+                        <pre>
+Browse different campaigns
+and select a cause.
+                    </pre>
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="img">
+                        <img src="https://www.donatekart.com/images/how-2-select-products.png">
+                    </div>
+                    <div class="content">
+                        <h3>SELECT PRODUCTS</h3>
+                        <pre>Select products and quantity 
+you wish to donate.
+                       </pre>
+                    </div>
+                </div>
+
+                <div class="part3">
+                    <div class="img">
+                        <img src="https://www.donatekart.com/images/how-3-order-processing.png">
+                    </div>
+                    <div class="content">
+                        <h3>ORDER PROCESSING
+                        </h3>
+                        <pre>Checkout and pay for 
+your contributions.                   
+                    </pre>
+                    </div>
+                </div>
+                <div class="part4">
+                    <div class="img">
+                        <img src="https://www.donatekart.com/images/how-4-delivery-report.png">
+                    </div>
+                    <div class="content">
+                        <h3>DELIVERY REPORT</h3>
+                        <pre>
+Medinfo delivers the products
+and the organisation updates about
+product utilization.
+                    </pre>
+                    </div>
+                </div>
+
+            </div>
+            <div class="advantage">
+                <h1>Medinfo ADVANTAGE</h1>
+                <h3>Medinfo is India's first social enterprise which is providing a unique platform for social organisations to easily procure products in need.</h3>
+
+                <div class="row1">
+                    <div class="col1">
+
+                        <h3>TRANSPARENCY </h3>
+                        <pre>
+No money involved & products will be delivered 
+directly by medinfo, thus complete transparency.
+                </pre>
+                    </div>
+
+                    <div class="col2">
+
+                        <h3>LOW COST </h3>
+                        <pre>
+As we list down the least cost and durable products
+on medinfo your money will be spent effectively.
+                </pre>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="col1">
+
+                        <h3>TIMELY UPDATES</h3>
+                        <pre>
+Donor gets timely updates from beneficiaries on 
+how your products are being used.
+                </pre>
+                    </div>
+
+
+                    <div class="col2">
+
+                        <h3>DONOR MANAGEMENT</h3>
+                        <pre>
+We will empower and provide tools to NGO’s
+to manage their donors which will increase the 
+donor retention rate.
+                </pre>
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <div class="col1">
+
+                        <h3>NEED BASED DONATION </h3>
+                        <pre>
+Just tell us the products that are in need to   
+your organisation we will make sure that you get 
+them all and you just focus on the work you do.
+                </pre>
+                    </div>
+
+
+                    <div class="col2">
+
+                        <h3>FREE PLATFORM </h3>
+                        <pre>
+Completely free for organisations to run any number 
+of campaigns where as crowdfunding platforms charges
+more than 10% of raised money as fees.
+                </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block3">
+            <div class="part1">
+                <div class="img">
+                    <img src="https://ketto.gumlet.io/assets/images/sip/icons/piggy-bank-1.png?w=240&dpr=1.5">
+                </div>
+                <div class="content">
+                    <h3>Its Affordable</h3>
+                    <pre>
+No matter what you give,
+every donation will make an impact.
+                        </pre>
+                </div>
+            </div>
+            <div class="part2">
+                <div class="img">
+                    <img src="https://ketto.gumlet.io/assets/images/sip/icons/happy-1.png?w=240&dpr=1.5">
+                </div>
+                <div class="content">
+                    <h3>It's a Community</h3>
+                    <pre>
+Be part of an inspiring group, 
+changing lives every month
+                        </pre>
+                </div>
+            </div>
+
+            <div class="part3">
+                <div class="img">
+                    <img src="https://ketto.gumlet.io/assets/images/sip/icons/love-1.png?w=240&dpr=1.5">
+                </div>
+                <div class="content">
+                    <h3>It's Transparent
+                    </h3>
+                    <pre>
+You'll receive regular updates
+on your donations
+                        </pre>
+                </div>
+            </div>
+            <div class="part4">
+                <div class="img">
+                    <img src="https://ketto.gumlet.io/assets/images/sip/icons/magic-ball-1.png?w=240&dpr=1.5">
+                </div>
+                <div class="content">
+                    <h3>It's an Investment</h3>
+                    <pre>
+Your contributions will fund
+your medical emergencies
+                        </pre>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <hr>
+    <footer>
+        <div class="footer-left">
+            <div id="name">Medinfo</div>
+            <div id="quotes">Charity begins at home</div>
+        </div>
+        <div class="footer-middle">
+
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gethelp">Help Required</a></li>
+                <li><a href="wanttohelp">Want to Donate</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div id="contact">Link with us on social media:</div>
+            <a href="#facebook.com" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>

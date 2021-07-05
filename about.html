@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For font styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <!-- For adding social media symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        header {
+            background-color: cornflowerblue;
+            /* height: 264px; */
+        }
+        
+        .header1 {
+            color: #2739a0;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 50px;
+            font-weight: bolder;
+            background-color: azure;
+            display: flex;
+            flex-wrap: wrap;
+            /* height: 84px; */
+            padding: 20px 10px;
+            text-align: right;
+        }
+        
+        #header-img {
+            /* width: 30%; */
+            display: inline block;
+        }
+        
+        #header1-1 {
+            /* width: 70%; */
+            display: inline-block;
+            position: relative;
+            padding-left: 68px;
+            padding-top: 21px;
+            /* top: -16px;
+        right: 152px; */
+        }
+        
+        #header1-2 {
+            /* position: relative; */
+            font-size: 15px;
+            /* right: 281px; */
+            display: inline-block;
+            font-size: 18px;
+            padding-top: 55px;
+            padding-left: 11px;
+        }
+        
+        #span,
+        #span2 {
+            color: rgb(37, 145, 69);
+            cursor: pointer;
+        }
+        /* span{
+        color: rgb(37, 145, 69);
+        cursor: pointer;
+    } */
+        
+        .header1 img {
+            display: inline-block;
+            clear: both;
+            position: absolute;
+            /* left: 730px; */
+        }
+        
+        #span {
+            display: inline-block;
+        }
+        
+        .header2 {
+            display: flex;
+            flex-wrap: wrap;
+            color: chartreuse;
+            background-color: rgb(187, 69, 26);
+            /* height: 100px; */
+            box-sizing: border-box;
+        }
+        
+        .header2 ul {
+            display: inline-block;
+            list-style: none;
+            clear: both;
+        }
+        
+        .header2 li {
+            display: inline-block;
+            padding: 10px;
+            font-size: 20px;
+            border: 1.5px solid rgb(231, 228, 228);
+            border-radius: 5px;
+            margin: 5px;
+            margin-right: 37px;
+        }
+        
+        .header2 ul li a {
+            color: cornsilk;
+            text-decoration: none;
+        }
+        
+        .header2 ul li a:hover,
+        .navbar ul li a:active {
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+        }
+        
+        .account {
+            display: inline-block;
+            /* text-align: right; */
+            /* position:relative;
+        bottom: -10px;
+        left: 470px;
+        height: 40px; */
+            box-sizing: border-box;
+            padding-bottom: 30px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-left: 30px;
+        }
+        
+        #button1,
+        #button2 {
+            background-color: greenyellow;
+            border-radius: 15px;
+            margin: 5px;
+        }
+        
+        #button1:hover,
+        #button2:hover {
+            background-color: rgb(146, 219, 35);
+        }
+        
+        #button1 a,
+        #button2 a {
+            text-decoration: none;
+            font-size: 15px;
+            color: grey;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        #button1 a:hover,
+        #button2 a:hover {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .abouthead {
+            text-align: center;
+            background: coral;
+            color: cornsilk;
+        }
+        
+        .abouthead {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .main {
+            background-image: url(https://images.unsplash.com/photo-1597440658768-f3ffdf64223c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1380&q=100);
+            background-repeat: no-repeat;
+            text-align: center;
+            color: darkgoldenrod;
+            font-weight: bolder;
+            font-size: large;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #welcome {
+            color: darkgreen;
+            font-size: larger;
+            padding-top: 15px;
+        }
+        
+        #advice {
+            font-size: x-large;
+            color: rgb(187, 39, 39);
+        }
+        
+        #thanks {
+            font-size: x-large;
+            color: darkgreen;
+        }
+        
+        footer {
+            background-color: rgb(71, 63, 63);
+            color: blanchedalmond;
+            display: flex;
+            flex-wrap: wrap;
+            /* height: 300px; */
+            padding-top: 20px;
+            padding-bottom: 20px;
+            align-items: center;
+        }
+        
+        .footer-left {
+            /* display: inline-block; */
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        #name {
+            font-size: 60px;
+        }
+        
+        #quotes {
+            font-family: 'Viaoda Libre', cursive;
+            font-size: xx-large;
+        }
+        
+        .footer-middle {
+            /* width: 600px; */
+            display: flex;
+            font-size: larger;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+        
+        .footer-middle a {
+            text-decoration: none;
+            font-weight: bold;
+            color: beige;
+        }
+        
+        .footer-middle a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+            color: rgb(223, 223, 197);
+        }
+        
+        .footer-right {
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        
+        #contact {
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        
+        .fa {
+            padding: 5px;
+            font-size: 25px;
+            width: 25px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.8;
+        }
+        
+        .fa-facebook {
+            background: #8ba9eb;
+            color: white;
+        }
+        
+        .fa-twitter {
+            background: #77bcf1;
+            color: white;
+        }
+        
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #dd4848;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #e63cc1;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <div id="himg">
+                <image id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCxTnQ75455edvcV-0BRXqMDuozAak_bV4Q&usqp=CAU" height="90px" width="70px"></image>
+            </div>
+
+            <div id="header1-1">Medinfo</div>
+            <div id="header1-2">
+                <div id="span">NGO</div> for Medicinal Help...
+            </div>
+        </div>
+
+        <div class="header2">
+            <ul class="links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gethelp">Medicine Help Required</a></li>
+                <li><a href="wanttohelp">Medicine Donation</a></li>
+            </ul>
+            <div class="account">
+                <button id="button1"><a href="login.html">Log-In</button>
+                <button id="button2"><a href="signup.html">Sign-Up</a></button>
+            </div>
+        </div>
+        <div class="header3">
+            <marquee behavior="alternate" direction="left" bgcolor="gold">Your help can save LIFE of someone. So please donate.</marquee>
+        </div>
+    </header>
+    <div class="abouthead">
+        <h1>About Us</h1>
+    </div>
+    <div class="main">
+        <div id="welcome"> WELCOME to MEDINFO...</div> <br>We are here to help you and we also need your help. <br> Medinfo is a non-profit organisation which is made with the purpose of charity. <br> Medinfo is basically a where you will get to know about the availability
+        of medicines, beds, oxygen-cylinder, vaccines and many more things which are difficult to arrange for a middle class person. <br> We use some forms to deal with it. <br>If anyone is in urgent need of medicines/ injections etc., we check the availability,
+        and accordingly provide it to the needy ones. <br>One section is for donation of such things where if any person has the unused medicines etc. and wish to donate them, so he can fill the donation form and and provide the help.
+        <br> We hope that our website will help you in providing medicines and other Covid related facilities. <br>For more details you can contact us on various social media platforms. <br> <br>
+        <div id="advice"> Stay home, Stay safe. <br>Always wear a mask at any social place and maintain proper social distancing.</div> <br>
+        <div id="thanks"> Thanks for visiting us.</div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <div id="name">Medinfo</div>
+            <div id="quotes">Charity begins at home</div>
+        </div>
+        <div class="footer-middle">
+
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gethelp">Help Required</a></li>
+                <li><a href="wanttohelp">Want to Donate</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div id="contact">Link with us on social media:</div>
+            <a href="#facebook.com" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>

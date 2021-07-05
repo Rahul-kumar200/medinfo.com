@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(https://www.greenbiz.com/sites/default/files/images/articles/featured/coronavirus.jpg);
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+
+        }
+
+        fieldset {
+            display: inline-block;
+            width: 700px;
+            background-color: rgb(220 247 179);
+            /* background-image: url(https://images.unsplash.com/photo-1618015359994-a67bd07e48b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=125&q=800); */
+            background-repeat: no-repeat;
+
+        }
+
+        .note {
+            color: red;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        label {
+            color: #0a1d05;
+        }
+
+        input {
+            color: rgb(187, 192, 192);
+            text-align: center;
+            padding: 5px 80px;
+            border: 2px solid green;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        #submit input {
+            color: wheat;
+            font-size: 15px;
+            font-weight: bolder;
+            background: rgb(255, 1, 1);
+        }
+    </style>
+    <title>Need</title>
+</head>
+
+<body>
+    <div class="body">
+        <fieldset>
+            <div class="note">Please enter the correct details, so that it will be convenient for us to contact you and
+                provide you with the proper facilities. Please don't fill unnecessary details for fun purpose and let
+                charity to be going on.</div><br>
+            <form name="myform" autocomplete="off" onsubmit="guide()">
+                <input type="text" name="name" placeholder="Enter your full name">
+                <br><br>
+                <input type="text" name="address" placeholder="Enter your full Address">
+                <br><br>
+                <label>Pls confirm your age: <br>
+                    <input type="number" name="age" min="0"></label><br><br>
+                <label>1.)Gender:
+                    <input type="radio" name="vaccination" value="Male">Male
+                    <input type="radio" name="vaccination" value="Female">Female
+                </label><br><br>
+                <label>2.) Which among the following is your requirements:
+                    <input type="radio" name="vaccine" value="Vaccine">Vaccine
+                    <input type="radio" name="vaccine" value="Beds">Beds
+                    <input type="radio" name="vaccine" value="oxygen-cylinder">oxygen-cylinder
+                    <input type="radio" name="vaccine" value="Other medicines">Other Medicines
+                </label><br><br>
+                <label>3.) Enter your Mobile number for contacts:<br>
+                    <input type="text" name="mobile"></label><br><br>
+                <label>4.) Enter your E-mail for further contacts:<br>
+                    <input type="email" name="email"></label><br><br>
+                <label>5.) Select your date of birth:<br>
+                    <input type="date" name="DOB"></label><br><br>
+                <label>6.) Enter your City name: <br>
+                    <input type="text" name="city"></label><br><br>
+                <label>7.) Enter your State name: <br>
+                    <input type="text" name="state"></label><br><br>
+                <label>8.) Enter PIN code of your area: <br>
+                    <input type="text" name="Pin"></label><br><br>
+
+
+                <div id="submit"><input type="submit" value="Submit"></div>
+            </form>
+
+        </fieldset>
+    </div>
+</body>
+
+</html>
